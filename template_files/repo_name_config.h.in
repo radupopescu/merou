@@ -1,0 +1,6 @@
+#pragma once
+
+#define Hush_VERSION_MAJOR @Hush_VERSION_MAJOR@
+#define Hush_VERSION_MINOR @Hush_VERSION_MINOR@
+#define Hush_VERSION_MICRO @Hush_VERSION_MICRO@
+#define Hush_VERSION_STRING "@Hush_VERSION_MAJOR@.@Hush_VERSION_MINOR@.@Hush_VERSION_MICRO@"
