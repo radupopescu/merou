@@ -10,7 +10,7 @@ Mérou aims to simplify this: it provides a simple C++ project skeleton that can
 The base features provided by the skeleton should be:
 
 + CMake based project configuration
-+ Dummy files for app, library parts of the code
++ Dummy files for application and library parts of the code
 + Unit tests already set up
 + Travis integration
 
