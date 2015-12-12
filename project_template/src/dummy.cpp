@@ -1,10 +1,17 @@
 #include "dummy.h"
 
+namespace <PROJECT_NAME_LOWER> {
 Dummy::Dummy()
-    : i_(1)
+    : mVar(1)
 {
 }
 
 Dummy::~Dummy()
 {
+}
+
+int Dummy::Var() const
+{
+  return 0;
+}
 }

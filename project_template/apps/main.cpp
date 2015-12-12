@@ -11,5 +11,8 @@ int main()
 {
     std::cout << "<PROJECT_NAME> version: " << <PROJECT_NAME>_VERSION_STRING << std::endl;
 
+    <PROJECT_NAME_LOWER>::Dummy d;
+    int var = d.Var();
+
     return 0;
 }
