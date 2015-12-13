@@ -44,7 +44,7 @@ def get_parameters_from_arguments(arguments):
               'description'      : arguments.description,
               'developer_name'   : arguments.developer_name,
               'github_user_name' : arguments.github_user_name,
-              'github_repo'      : arguments.github,
+              'github_repo'      : arguments.github_repo,
               'output_path'      : arguments.output_path}
 
     return params
