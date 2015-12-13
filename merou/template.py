@@ -1,6 +1,7 @@
 import datetime
 import os
 import re
+import unittest
 
 def build_substitution_table(params):
     table = { '<PROJECT_NAME>'       : params['project_name'],
@@ -46,3 +47,19 @@ def configure_new_project(params):
     substitutions = build_substitution_table(params)
     for f in files:
         substitute_in_file(f, substitutions)
+
+class PatternSubstitutionTests(unittest.TestCase):
+    def testSingleOccurenceInLine(self):
+        line = '<PROJECT_NAME> rest of the string'
+        self.assertEqual(substitute_in_line(line, { '<PROJECT_NAME>' : 'Name' }),
+                         'Name rest of the string')
+
+    def testMultipleOccurrencesInLine(self):
+        line = '<DEVELOPER_NAME> is something else then <DEVELOPER_NAME>'
+        self.assertEqual(substitute_in_line(line, { '<DEVELOPER_NAME>' : 'Dev' }),
+                         'Dev is something else then Dev')
+
+    def testMultiplePatternsInLine(self):
+        line = '<PROJECT_NAME> vegetables and then <GITHUB_USER_NAME>'
+        self.assertEqual(substitute_in_line(line, { '<PROJECT_NAME>' : 'Sky', '<GITHUB_USER_NAME>' : 'Cat' }),
+                         'Sky vegetables and then Cat')
