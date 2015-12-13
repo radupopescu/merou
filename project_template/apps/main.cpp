@@ -1,6 +1,6 @@
 /*
  * This file is part of the <PROJECT_NAME> project:
- *     https://github.com/<DEVELOPER_NAME>/<GITHUB_REPO_NAME>
+ *     https://github.com/<GITHUB_USER_NAME>/<GITHUB_REPO_NAME>
  */
 
 #include "<PROJECT_NAME_LOWER>_config.h"

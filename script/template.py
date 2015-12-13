@@ -7,8 +7,9 @@ def build_substitution_table(params):
               '<PROJECT_NAME_LOWER>' : params['project_name'].lower(),
               '<CURRENT_YEAR>'       : str(datetime.datetime.now().year),
               '<DEVELOPER_NAME>'     : params['developer_name'],
+              '<GITHUB_USER_NAME>'   : params['github_user_name'],
               '<GITHUB_REPO_NAME>'   : params['github_repo'],
-              '<PROJECT_OVERVIEW>'   : params['description'] }
+              '<PROJECT_DESCRIPTION>'   : params['description'] }
 
     return table
 
