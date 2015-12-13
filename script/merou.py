@@ -1,5 +1,6 @@
 import parameters
 import fileoperations
+import template
 
 def main():
     # Collect the project parameters either from command-line arguments or from JSON file
@@ -21,6 +22,12 @@ def main():
 
     # Configure the new project replacing the template values
     print 'Configuring new project... ',
+    template.configure_new_project(project_params)
+    print 'done.'
+
+    print
+    print 'Your new project is ready.'
+    print
 
 
 if __name__ == '__main__':
