@@ -1,7 +1,8 @@
 import argparse
 import json
+import sys
 
-def read():
+def read(args=sys.argv):
     parser = argparse.ArgumentParser(description='Generate a new C++ project')
 
     parser.add_argument('project_name', nargs="?",
@@ -16,7 +17,7 @@ def read():
                         help='JSON file that contains the parameters of the new project. '
                         + 'If this argument is provided, the others are not considered.')
 
-    arguments = parser.parse_args()
+    arguments = parser.parse_args(args)
 
     template_file = arguments.template_file
     if template_file != None:
@@ -35,7 +36,7 @@ def read():
 
 def get_parameters_from_file(template_file):
     with open(template_file) as tf:
-        parameters =json.load(tf)
+        parameters = json.load(tf)
 
         return parameters
 
