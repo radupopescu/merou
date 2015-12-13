@@ -1,5 +1,7 @@
 # Mérou - A helper for quickly creating new C++ projects
 
+[![Build Statis](https://travis-ci.org/radupopescu/merou.svg?branch=master)](https://travis-ci.org/radupopescu/merou)
+
 ## Overview
 
 Many programming languages come with full featured tools for creating and managing projects written in these languages.
