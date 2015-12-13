@@ -1,6 +1,7 @@
 import argparse
 import json
 import sys
+import unittest
 
 def read(args=sys.argv):
     parser = argparse.ArgumentParser(description='Generate a new C++ project')
@@ -50,3 +51,7 @@ def get_parameters_from_arguments(arguments):
 
     return params
 
+# Tests
+class ParameterReadingTests(unittest.TestCase):
+    def fake(self):
+        assertEquad(0 == 1)
