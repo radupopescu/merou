@@ -1,2 +1,3 @@
-int main(int argc, char **argv) {
-}
+#define CATCH_CONFIG_MAIN
+
+#include "catch.hpp"
