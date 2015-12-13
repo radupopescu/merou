@@ -10,4 +10,8 @@ notifications:
     on_success: never
     on_failure: always
 
+before_install:
+      - sudo apt-get update -qq
+      - sudo apt-get install -y realpath
+
 script: ./travis_build.sh
