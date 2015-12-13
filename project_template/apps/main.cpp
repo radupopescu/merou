@@ -5,6 +5,8 @@
 
 #include "<PROJECT_NAME_LOWER>_config.h"
 
+#include <dummy.h>
+
 #include <iostream>
 
 int main()
