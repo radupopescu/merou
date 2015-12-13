@@ -2,12 +2,12 @@ import datetime
 import re
 
 def build_substitution_table(params):
-    table = { '<PROJECT_NAME>' : params['project_name'],
+    table = { '<PROJECT_NAME>'       : params['project_name'],
               '<PROJECT_NAME_LOWER>' : params['project_name'].lower(),
-              '<CURRENT_YEAR>' : datetime.datetime.now.year,
-              '<OWNER_NAME>' : params['owner_name'],
-              '<REPO_NAME>' : params['github'],
-              '<PROJECT_OVERVIEW>' : params['description'] }
+              '<CURRENT_YEAR>'       : datetime.datetime.now.year,
+              '<OWNER_NAME>'         : params['developer_name'],
+              '<GITHUB_REPO_NAME>'   : params['github_repo'],
+              '<PROJECT_OVERVIEW>'   : params['description'] }
 
     return table
 

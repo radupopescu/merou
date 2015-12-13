@@ -8,7 +8,7 @@ def read():
                         help='the name of the new project; must be a single word (default: "NewProject")')
     parser.add_argument('-d', '--description', help='brief description of the project')
     parser.add_argument('-n', '--developer_name', help='the name of the project developer')
-    parser.add_argument('-g', '--github', help='name of the associated GitHub repository')
+    parser.add_argument('-g', '--github_repo', help='name of the associated GitHub repository')
     parser.add_argument('-o', '--output_path',
                         help='output path where the project will be created (default: "./")')
     parser.add_argument('-t', '--template_file',
@@ -42,7 +42,7 @@ def get_parameters_from_arguments(arguments):
     params = {'project_name'   : arguments.project_name,
               'description'    : arguments.description,
               'developer_name' : arguments.developer_name,
-              'github'         : arguments.github,
+              'github_repo'    : arguments.github,
               'output_path'    : arguments.output_path}
 
     return params
