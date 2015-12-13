@@ -1,5 +1,0 @@
-#!/bin/sh
-
-merou_dir=`dirname "$(readlink "$0")"`
-
-python ${merou_dir}/script/merou.py $@
