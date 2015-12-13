@@ -1,3 +1,4 @@
+import external
 import parameters
 import fileoperations
 import template
@@ -16,10 +17,14 @@ def main():
     print 'Output path         : ', project_params['output_path']
     print
 
-    # Creating new project files
+    # Create new project files
     print 'Creating new project... ',
     fileoperations.new_project_tree(project_params)
     print 'done.'
+
+    # Download any external files (catch.hpp and its LICENSE file, for now)
+    print 'Downloading external files:'
+    external.download_files(project_params)
 
     # Configure the new project replacing the template values
     print 'Configuring new project... ',
