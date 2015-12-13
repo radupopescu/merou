@@ -1,7 +1,7 @@
 {
     "project_name"   : "TestProject",
     "developer_name" : "Radu Popescu",
-    "github"         : "test_project",
+    "github_repo"    : "test_project",
     "description"    : "Fake project to test the merou script",
     "output_path"    : "./"
 }
