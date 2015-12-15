@@ -18,7 +18,7 @@ The base features provided by the skeleton are:
 
 This project is under development, feedback is really appreciated. Please report any bugs and issues you encounter.
 
-I hope you find Mérou useful and enjoy using it.
+I hope you find Mérou helpful and enjoy using it.
 
 ## Usage
 
