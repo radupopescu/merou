@@ -8,7 +8,7 @@ def new_project_tree(params):
         project_name_lower = params['project_name'].lower()
         new_project_path = os.path.join(params['output_path'], project_name_lower)
         if not os.path.isdir(new_project_path):
-            shutil.copytree(project_template_dir, project_name_lower)
+            shutil.copytree(project_template_dir, new_project_path)
 
             # Some files need to be renamed to match the new project name
             template_project_config = os.path.join(new_project_path, 'new_project_config.h.in')
